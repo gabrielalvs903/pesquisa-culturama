@@ -6,8 +6,48 @@
     <title>culturama</title>
 </head>
 <body>
+
+    <header>
+        <h1>Pesquisa culturama</h1>
+    </header>
     <section>
+        <!-- Formulario de pesquisa "nome" do usuario"-->
+         <fieldset>
+            <legend> INFORMAÇÕES DO USUÁRIO</legend>
+        <form action="" method="get">
+            <label for="userName">NOME</label>
+            <input type="text" id="userName" name="userName" required>
         
+            <!-- Campo de idade media de usuários do site  -->
+<br>      
+         <label for="userAge">IDADE</label>
+         <input type="number"   name="userAge" required min="12" max="100">
+         
+<!-- 
+           Campo de ano que os usuários nasceu -->
+<br>
+           <label for="birthDate">DATA DE NASCIMENTO</label>
+           <input type="date" name="birthDate" required min="1900" max="2024">
+<!-- 
+           campo de email do usuário -->
+<br>
+            <label for="userEmail">EMAIL</label>
+            <input type="email" name="userEmail" required>
+
+            <!-- campo de telefone do usuário -->
+<br>
+             <label for="userPhoneNumber">TELEFONE</label>
+             <input type="tel" name="userPhoneNumber" required pattern="[0-9]{11}" placeholder=" DDD + número mas sem espaço e sem hífen">
+
+             <!-- campo para receber arquivos "imagens" do usuário -->
+<br>
+              <label for="userImage">Uploud de fotos</label>
+              <input type="file" accept="image/*" name="userImage">
+
+<br>            </fieldset> 
+              <button type="submit">Enviar</button>
+
+        </form>
     </section>
 </body>
 </html>
