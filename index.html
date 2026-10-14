@@ -54,12 +54,12 @@
 
     <p>Gênero:</p>
     <input type="radio" name="userGender" value="feminino">
-    <label for="feminine" id="feminine">Feminino</label>
+    <label for="feminino" id="feminino">Feminino</label>
     
     <input type="radio" name="userGender" value="masculino">
-    <label for="masculine" id="masculine">Masculino</label>
+    <label for="masculino" id="masculino">Masculino</label>
 
-     <input type="radio" name="notiformd" value="notiformd">
+     <input type="radio" name="userNotInform" value="notiformd">
     <label for="notiformd" id="notiformd">Prefiro não informar</label>
     <br>
     
@@ -135,9 +135,26 @@
             <br>
             <label for="FavoriteColors">Cores Preferidas:</label>
             <input type="color" id="FavoriteColors" name="UserFavoriteColors" >
-
 </fieldset>
+<fieldset>
+    <label for="comments" name="userComments" value="comments">Avaliação:</label>
+    <input type="radio" id="comments" name="userComments" value="muito_bom">
 
+    <label for="comments">Muito bom</label>
+    <input type="radio" id="commentsBom" name="userComments" value="bom">
+    <label for="commentsBom">Bom</label>
+
+    <input type="radio" id="commentsRegular" name="userComments" value="regular">
+    <label for="commentsRegular">Regular</label>
+
+    <input type="radio" id="commentsRuim" name="userComments" value="ruim">
+    <label for="commentsRuim">Ruim</label>
+    <br> 
+        <p>Escreva como foi sua experiencia</legend></p> 
+    <label for="commentsText">Escreva sua avaliação:</label>
+    <br>
+    <textarea id="commentsText" name="userCommentsText"placeholder="Escreva aqui sua avaliação"></textarea>
+</fieldset>
 <button type="submit">Enviar</button>
         </form>
        
