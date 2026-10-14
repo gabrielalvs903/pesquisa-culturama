@@ -10,38 +10,60 @@
     <header>
         <h1>Pesquisa culturama</h1>
     </header>
-
     <section>
         <!-- Formulario de pesquisa "nome" do usuario"-->
+revert-2-feat/Perfil
+         <fieldset>
         
         <form action="" method="get"> 
         <fieldset> 
+main
             <legend> INFORMAÇÕES DO USUÁRIO</legend>
+        <form action="" method="get">
             <label for="userName">NOME</label>
             <input type="text" id="userName" name="userName" required>
-        
+         revert-2-feat/Perfil
+            <!-- Campo de idade media de usuários do site  -->
+<br>      
+         <label for="userAge">IDADE</label>
+         <input type="number"   name="userAge" required min="12" max="100">
+
            
          <label for="Age">IDADE</label>
          <input type="number"  id="Age" name="userAge" required min="12" max="100">
+ main
          
+<!-- 
+           Campo de ano que os usuários nasceu -->
 <br>
+ revert-2-feat/Perfil
+           <label for="birthDate">DATA DE NASCIMENTO</label>
+           <input type="date" name="birthDate" required min="1900" max="2024">
+<!-- 
+           campo de email do usuário -->
+
            <label for="Date">DATA DE NASCIMENTO</label>
            <input type="date" id="Date"name="birthDate" required min="1900" max="2024">
 
            
+ main
 <br>
             <label for="Email">EMAIL</label>
             <input type="email" id="Email" name="userEmail" required>
 
-            
+            <!-- campo de telefone do usuário -->
 <br>
              <label for="Phone">TELEFONE</label>
              <input type="tel" id="Phone" name="userPhoneNumber" required pattern="[0-9]{11}" placeholder=" DDD + número mas sem espaço e sem hífen">
 
-            
+             <!-- campo para receber arquivos "imagens" do usuário -->
 <br>
               <label for="Image">Uploud de fotos</label>
               <input type="file" id="Image" accept="image/*" name="userImage">
+
+revert-2-feat/Perfil
+<br>            </fieldset> 
+              <button type="submit">Enviar</button>
 
 <br>           
 
@@ -135,7 +157,7 @@
             <br>
             <label for="FavoriteColors">Cores Preferidas:</label>
             <input type="color" id="FavoriteColors" name="UserFavoriteColors" >
-</fieldset>
+</fieldset> feat/consentimento-e-resultado
 <fieldset>
     <label for="comments" name="userComments" value="comments">Avaliação:</label>
     <input type="radio" id="comments" name="userComments" value="muito_bom">
@@ -143,6 +165,9 @@
     <label for="comments">Muito bom</label>
     <input type="radio" id="commentsBom" name="userComments" value="bom">
     <label for="commentsBom">Bom</label>
+=======
+main
+ main
 
     <input type="radio" id="commentsRegular" name="userComments" value="regular">
     <label for="commentsRegular">Regular</label>
