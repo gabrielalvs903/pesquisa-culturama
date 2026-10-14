@@ -74,7 +74,7 @@
     </fieldset>
 <br>
 <fieldset>  
-    <legend>Seu Estado</legend>
+    <legend>Seu Estado:</legend>
     <label for="states" id="states">Estados</label>
 <select name="states" id="states" required>
 <option value="notinfomad">Selecione...</option>
@@ -108,7 +108,7 @@
 
 <fieldset>
     <legend>Hábitos</legend>
-    <p>Redes Sociais</p>
+    <p>Redes Sociais:</p>
     <input type="checkbox" name="Social" value="instagram">
     <label for="instagram"id="instagram">Instagram</label>
     <br>
@@ -120,6 +120,17 @@
     <br>
      <input type="checkbox" name="Social" value="linkedin">
     <label for="linkedin"id="linkedin">LinkedIn</label>
+    <br>
+    <label for="musicStyle" >Estilo Musical:</label>
+    <input list="styletypes" type="text" id="musicStyle" name="UserMusicStyle">
+    <datalist id="styletypes">
+        <option value="Rock">
+        <option value="Pop">
+        <option value="Sertanejo">
+        <option value="Funk">
+        <option value="Pagode">
+        <option value="Forró">
+        <option value="MPB">
 </fieldset>
 
 <button type="submit">Enviar</button>
