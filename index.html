@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>culturama</title>
+    <link rel="icon" type="image/x-icon" href="culturama-favico.png">
 </head>
 <body>
 
@@ -75,14 +76,14 @@ revert-2-feat/Perfil
     <legend>PERFIL</legend>
 
     <p>Gênero:</p>
-    <input type="radio" name="userGender" value="feminino">
-    <label for="feminine" id="feminine">Feminino</label>
+    <input type="radio" id="feminino" name="userGender" value="feminino">
+    <label for="feminino">Feminino</label>
     
-    <input type="radio" name="userGender" value="masculino">
-    <label for="masculine" id="masculine">Masculino</label>
+    <input type="radio" id="masculino"name="userGender" value="masculino">
+    <label for="masculino" >Masculino</label>
 
-     <input type="radio" name="notiformd" value="notiformd">
-    <label for="notiformd" id="notiformd">Prefiro não informar</label>
+     <input type="radio" id="notiformd"name="userGender" value="notiformd">
+    <label for="notiformd">Prefiro não informar</label>
     <br>
     
     <label for="maritalStatus">Estado Civil:</label>
@@ -131,17 +132,17 @@ revert-2-feat/Perfil
 <fieldset>
     <legend>Hábitos</legend>
     <p>Redes Sociais:</p>
-    <input type="checkbox" name="Social" value="instagram">
-    <label for="instagram"id="instagram">Instagram</label>
+    <input type="checkbox" id="instagram"name="userInstagram" value="instagram">
+    <label for="instagram">Instagram</label>
     <br>
-     <input type="checkbox" name="Social" value="facebook">
-    <label for="facebook"id="facebook">Facebook</label>
+     <input type="checkbox" id="facebook"name="userFacebook" value="facebook">
+    <label for="facebook">Facebook</label>
     <br>
-     <input type="checkbox" name="Social" value="twitter">
-    <label for="twitter"id="twitter">Twitter</label> 
+     <input type="checkbox"id="twitter" name="userTwitter" value="twitter">
+    <label for="twitter">Twitter</label> 
     <br>
-     <input type="checkbox" name="Social" value="linkedin">
-    <label for="linkedin"id="linkedin">LinkedIn</label>
+     <input type="checkbox" id="linkedin"name="userLinkedIn" value="linkedin">
+    <label for="linkedin">LinkedIn</label>
     <br>
     <label for="musicStyle" >Estilo Musical:</label>
     <input list="styletypes" type="text" id="musicStyle" name="UserMusicStyle">
@@ -157,10 +158,38 @@ revert-2-feat/Perfil
             <br>
             <label for="FavoriteColors">Cores Preferidas:</label>
             <input type="color" id="FavoriteColors" name="UserFavoriteColors" >
+</fieldset> feat/consentimento-e-resultado
+<fieldset>
+    <label for="comments" name="userComments" value="comments">Avaliação:</label>
+    <input type="radio" id="comments" name="userComments" value="muito_bom">
 
-</fieldset>
+    <label for="comments">Muito bom</label>
+    <input type="radio" id="commentsBom" name="userComments" value="bom">
+    <label for="commentsBom">Bom</label>
+=======
 main
+ main
 
+    <input type="radio" id="commentsRegular" name="userComments" value="regular">
+    <label for="commentsRegular">Regular</label>
+
+    <input type="radio" id="commentsRuim" name="userComments" value="ruim">
+    <label for="commentsRuim">Ruim</label>
+    <br> 
+        <p>Escreva como foi sua experiencia</legend></p> 
+    <label for="commentsText">Escreva sua avaliação:</label>
+    <br>
+    <textarea id="commentsText" name="userCommentsText"placeholder="Escreva aqui sua avaliação"></textarea>
+</fieldset>
+<br>
+<fieldset>
+    <legend>Confirmações</legend>
+    <input type="checkbox" id="confirmTerm" name="userLGPD" value="accepted" required>
+    <label for="confirmTerm">Confirmo que li e concordo com os termos de uso</label>
+    <br>
+    <input type="checkbox" id="Getresult" name="UserGetresult" value="accepted">
+    <label for="Getresult">Desejo receber os resultados da pesquisa por e-mail</label>
+</fieldset>
 <button type="submit">Enviar</button>
         </form>
        
