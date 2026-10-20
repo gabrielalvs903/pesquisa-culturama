@@ -4,76 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>culturama</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="culturama-favico.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Work+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
 
+<main>
     <header>
-        <h1>Pesquisa culturama</h1>
+        <img src="img/logo-culturama.png" alt="Logo do site culturama" >
+        <h1>Pesquisa de opinião</h1>
+        
     </header>
     <section>
-        <!-- Formulario de pesquisa "nome" do usuario"-->
-revert-2-feat/Perfil
+
          <fieldset>
         
-        <form action="" method="get"> 
+        <form action="sucesso.html" method="get"> 
         <fieldset> 
-main
+
             <legend> INFORMAÇÕES DO USUÁRIO</legend>
-        <form action="" method="get">
             <label for="userName">NOME</label>
             <input type="text" id="userName" name="userName" required>
-         revert-2-feat/Perfil
+    
             <!-- Campo de idade media de usuários do site  -->
 <br>      
-         <label for="userAge">IDADE</label>
-         <input type="number"   name="userAge" required min="12" max="100">
+         <label for="userAge" alt="IDADE">IDADE</label>
+         <input type="number"   id="userAge" name="userAge" required min="12" max="100">
 
-           
-         <label for="Age">IDADE</label>
-         <input type="number"  id="Age" name="userAge" required min="12" max="100">
- main
-         
-<!-- 
-           Campo de ano que os usuários nasceu -->
 <br>
- revert-2-feat/Perfil
-           <label for="birthDate">DATA DE NASCIMENTO</label>
-           <input type="date" name="birthDate" required min="1900" max="2024">
-<!-- 
-           campo de email do usuário -->
+           <label for="birthDate" alt="DATA DE NASCIMENTO">DATA DE NASCIMENTO</label>
+           <input type="date" id="birthDate" name="birthDate" required min="1900" max="2024">
 
-           <label for="Date">DATA DE NASCIMENTO</label>
-           <input type="date" id="Date"name="birthDate" required min="1900" max="2024">
-
-           
- main
 <br>
-            <label for="Email">EMAIL</label>
+            <label for="Email" alt="EMAIL">EMAIL</label>
             <input type="email" id="Email" name="userEmail" required>
 
             <!-- campo de telefone do usuário -->
 <br>
-             <label for="Phone">TELEFONE</label>
-             <input type="tel" id="Phone" name="userPhoneNumber" required pattern="[0-9]{11}" placeholder=" DDD + número mas sem espaço e sem hífen">
+             <label for="Phone" alt="TELEFONE">TELEFONE</label>
+             <input type="tel" id="Phone" name="userPhoneNumber" required pattern="[0-9]{11}" placeholder=" DDD + número mas sem espaço e sem hífen" aria-describedby="Phonehelp">
+             <small id="Phonehelp">Preencha a barra de pesquisa com seu número de telefone de 11 dígitos,incluindo o DDD. 
+             mas sem hífen e sem espaço. Exemplo: 11999999999</small>
+
+             </small>
 
              <!-- campo para receber arquivos "imagens" do usuário -->
 <br>
-              <label for="Image">Uploud de fotos</label>
-              <input type="file" id="Image" accept="image/*" name="userImage">
-
-revert-2-feat/Perfil
-<br>            </fieldset> 
-              <button type="submit">Enviar</button>
-
+              <label for="Image" alt="UPLOAD DE FOTOS">UPLOAD DE FOTOS</label>
+              <input type="file" id="Image" accept="image/*" name="userImage" aria-describedby="imageHelp">
+              <small id="imageHelp">Envie uma foto em PNG ou JPEG</small>
+       </fieldset> 
 <br>           
-
-</fieldset>
-
-
     <fieldset>
 
     <legend>PERFIL</legend>
 
+    feat/avaliacao
     <p>Gênero:</p>
     <input type="radio" name="userGender" value="feminino">
     <label for="feminino" id="feminino">Feminino</label>
@@ -81,8 +70,19 @@ revert-2-feat/Perfil
     <input type="radio" name="userGender" value="masculino">
     <label for="masculino" id="masculino">Masculino</label>
 
-     <input type="radio" name="userNotInform" value="notiformd">
+    <input type="radio" name="userNotInform" value="notiformd">
     <label for="notiformd" id="notiformd">Prefiro não informar</label>
+
+    <p>GÊNERO:</p>
+    <input type="radio" id="feminino" name="userGender" value="feminino">
+    <label for="feminino">Feminino</label>
+    
+    <input type="radio" id="masculino"name="userGender" value="masculino">
+    <label for="masculino" >Masculino</label>
+
+     <input type="radio" id="notiformd"name="userGender" value="notiformd">
+    <label for="notiformd">Prefiro não informar</label>
+
     <br>
     
     <label for="maritalStatus">Estado Civil:</label>
@@ -96,8 +96,8 @@ revert-2-feat/Perfil
     </fieldset>
 <br>
 <fieldset>  
-    <legend>Seu Estado:</legend>
-    <label for="states" id="states">Estados</label>
+    <legend>SEU ESTADO:</legend>
+    <label for="states" id="states">ESTADOS</label>
 <select name="states" id="states" required>
 <option value="notinfomad">Selecione...</option>
 <option value="AC">AC,Acre</option>       
@@ -127,21 +127,21 @@ revert-2-feat/Perfil
 <option value="TO">TO,Tocantins</option>  
 </select>     
 </fieldset>
-
+<br>
 <fieldset>
-    <legend>Hábitos</legend>
-    <p>Redes Sociais:</p>
-    <input type="checkbox" name="Social" value="instagram">
-    <label for="instagram"id="instagram">Instagram</label>
+    <legend>HÁBITOS</legend>
+    <p> REDES SOCIAIS:</p>
+    <input type="checkbox" id="instagram"name="userInstagram" value="instagram">
+    <label for="instagram">Instagram</label>
     <br>
-     <input type="checkbox" name="Social" value="facebook">
-    <label for="facebook"id="facebook">Facebook</label>
+     <input type="checkbox" id="facebook"name="userFacebook" value="facebook">
+    <label for="facebook">Facebook</label>
     <br>
-     <input type="checkbox" name="Social" value="twitter">
-    <label for="twitter"id="twitter">Twitter</label> 
+     <input type="checkbox"id="twitter" name="userTwitter" value="twitter">
+    <label for="twitter">Twitter</label> 
     <br>
-     <input type="checkbox" name="Social" value="linkedin">
-    <label for="linkedin"id="linkedin">LinkedIn</label>
+     <input type="checkbox" id="linkedin"name="userLinkedIn" value="linkedin">
+    <label for="linkedin">LinkedIn</label>
     <br>
     <label for="musicStyle" >Estilo Musical:</label>
     <input list="styletypes" type="text" id="musicStyle" name="UserMusicStyle">
@@ -155,12 +155,18 @@ revert-2-feat/Perfil
         <option value="MPB">
     </datalist>
             <br>
-            <label for="FavoriteColors">Cores Preferidas:</label>
+            <label for="FavoriteColors">COR FAVORITA:</label>
             <input type="color" id="FavoriteColors" name="UserFavoriteColors" >
 </fieldset>
 feat/avaliacao
 <fieldset>
     <label for="comments" name="userComments" value="comments">Avaliação:</label>
+
+</fieldset> 
+<br>
+<fieldset>
+    <label for="comments" name="userComments" value="comments">AVALIAÇÃO:</label>
+
     <input type="radio" id="comments" name="userComments" value="muito_bom">
 
     <label for="comments">Muito bom</label>
@@ -183,7 +189,33 @@ main
 </fieldset>
 <button type="submit">Enviar</button>
         </form>
+
+    <input type="radio" id="commentsRegular" name="userComments" value="regular">
+    <label for="commentsRegular">Regular</label>
+
+    <input type="radio" id="commentsRuim" name="userComments" value="ruim">
+    <label for="commentsRuim">Ruim</label>
+    <br>
        
+    <label for="commentsText">ESCREVA SUA EXPERIÊNCIA:</label>
+    <br>
+    <textarea id="commentsText" name="userCommentsText"placeholder="Escreva aqui sua avaliação"></textarea>
+</fieldset>
+<br>
+<fieldset>
+    <legend>CONFIRMAÇÕES</legend>
+    <input type="checkbox" id="confirmTerm" name="userLGPD" value="accepted" required>
+    <label for="confirmTerm">Confirmo que li e concordo com os termos de uso</label>
+    <br>
+    <input type="checkbox" id="Getresult" name="UserGetresult" value="accepted">
+    <label for="Getresult">Desejo receber os resultados da pesquisa por e-mail</label>
+</fieldset>
+<br>
+<button aria-label="Enviar" type="submit" alt="Enviar">Enviar</button> <button aria-label="Limpar" type="reset" alt="Limpar">Limpar</button>
+</form>
+
     </section>
+</main>
+
 </body>
 </html>
