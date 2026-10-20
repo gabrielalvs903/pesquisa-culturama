@@ -54,7 +54,7 @@ legend{
     font-weight: bold;
     padding: 0 10px;
 }
-input[tel]{
+input[tel], input[type="file"]{
     margin-bottom: 0;
 }
 small{ 
