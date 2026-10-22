@@ -1,0 +1,8 @@
+/* CCS RESET */
+body, h1, p, img, fieldset, label, input,select, textarea, button{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+    
+}
